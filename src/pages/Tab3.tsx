@@ -1,5 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonCard, IonCardSubtitle, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
@@ -7,16 +6,28 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Perfil</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
+            <IonTitle size="large">Perfil</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+
+          <div className='card-container'>
+            <IonCard className='card'>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDTI4iUgc3E2OyOJCrxOsR3ffxB1SJ-BYDw&s" alt="Avatar"/>
+              <IonHeader>
+                <IonCardTitle>Jordan Castillo</IonCardTitle>
+                <IonCardSubtitle>jordancastillopvc</IonCardSubtitle>
+                <IonContent> <p>cualquier civilazion que nos contacte o nos haya contacto en el pasado</p></IonContent>
+              </IonHeader>
+            </IonCard> 
+          </div>        
+
+
       </IonContent>
     </IonPage>
   );
